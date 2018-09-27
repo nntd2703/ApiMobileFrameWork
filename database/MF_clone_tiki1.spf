@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>MF_clone_tiki</string>
+			<key>host</key>
+			<string>127.0.0.1</string>
+			<key>name</key>
+			<string>127.0.0.1</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>root</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJX
+			TlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAF
+			gAdUdHlwZVRyb3dzXxAdU2VsZWN0aW9uRGV0YWlsVHlwZU5TSW5k
+			ZXhTZXTSFwsYGVxOU1JhbmdlQ291bnQQAIAG0hscHR5aJGNsYXNz
+			bmFtZVgkY2xhc3Nlc1pOU0luZGV4U2V0oh8gWk5TSW5kZXhTZXRY
+			TlNPYmplY3TSGxwiI1xOU0RpY3Rpb25hcnmiIiBfEA9OU0tleWVk
+			QXJjaGl2ZXLRJidUZGF0YYABAAgAEQAaACMALQAyADcAQABGAE0A
+			VQBgAGcAagBsAG4AcQBzAHUAdwB8AIEAoQCmALMAtQC3ALwAxwDQ
+			ANsA3gDpAPIA9wEEAQcBGQEcASEAAAAAAAACAQAAAAAAAAAoAAAA
+			AAAAAAAAAAAAAAABIw==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1078, 587}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>DROP TABLE IF EXISTS `mf_category`;
+CREATE TABLE `mf_category`(
+	`id_category` varchar(30) NOT NULL,
+	`title` varchar(300) NOT NULL,
+	`image_src` varchar(500),
+	`priority` varchar(30),
+	`link_refer` varchar(200) 
+);
+
+select * from `mf_instruction`;
+
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' and TABLE_SCHEMA = 'MF_clone_tiki' ;
+
+INSERT INTO `mf_instruction` values ('API_getallcategory','Get All Main Category','api/getallcategory','Not error now','');
+
+SELECT `id_category`,`link_refer` FROM `mf_category`;
+
+</string>
+			<key>table</key>
+			<string>mf_category</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>177</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>SELECT `id_category`,`link_refer` FROM `mf_category`</string>
+		<string>select * from `mf_instruction`</string>
+		<string>SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE' and TABLE_SCHEMA = 'MF_clone_tiki'</string>
+		<string>SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'</string>
+		<string>SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = `MF_clone_tiki`</string>
+		<string>SELECT * FROM INFORMATION_SCHEMA.TABLES</string>
+		<string>INFORMATION_SCHEMA.TABLES</string>
+		<string>SELECT * FROM `MF_clone_tiki`</string>
+		<string>select * from `mf_category`</string>
+		<string>DROP TABLE IF EXISTS `mf_category`;
+CREATE TABLE `mf_category`(
+	`id_category` varchar(30) NOT NULL,
+	`title` varchar(300) NOT NULL,
+	`image_src` varchar(500) NOT NULL,
+	`priority` varchar(30),
+	`link_refer` varchar(200) 
+)</string>
+		<string>DROP TABLE IF EXISTS `mf_category`
+CREATE TABLE `mf_category`(
+	`id_category` varchar(30) NOT NULL,
+	`title` varchar(300) NOT NULL,
+	`image_src` varchar(500) NOT NULL,
+	`priority` varchar(30),
+	`link_refer` varchar(200) 
+)</string>
+		<string>create database `MF_clone_tiki`</string>
+		<string>create new database `MF_clone_tiki`</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (9,'Tang 6',7)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (8,'Tang 4',4)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (7,'Tang 5',6)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (6,'Tang 4',5)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (5,'Tang 3',3)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (4,'Tang 3',2)</string>
+		<string>INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (4,'Tang 3',2),
+INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (5,'Tang 3',3),
+INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (6,'Tang 4',5),
+INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (7,'Tang 5',6),
+INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (8,'Tang 4',4),
+INSERT INTO `root_test` (`id`,`name`,`id_root`) VALUES (9,'Tang 6',7)</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.6.38</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
